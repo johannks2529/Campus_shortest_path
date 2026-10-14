@@ -1,0 +1,189 @@
+# N,id,name,x,y,type   (x,y = pixel position on campus_map.png; types: gate building lab landmark hostel utility parking canteen junction connector)
+# E,idA,idB[,meters]      (meters optional; if missing, distance = pixel distance x METERS_PER_MAP_UNIT in Main.java)
+N,admin,Administrative Block,586,328,building
+N,south,South Block (Library & EC),443,369,building
+N,church,Church (South Block),445,440,building
+N,vipro,Vipro (South Block),444,316,building
+N,visv,Visvesvaraya Block (Civil),451,245,building
+N,clc,Central Lecture Complex (Mech & Elec),590,203,building
+N,ram,Ramanujan Block (CS & SCIE),727,256,building
+N,north,North Block (MBA & MCA),724,369,building
+N,amenity,Amenity Block (Applied Electronics),584,160,building
+N,miniaud,Mini Auditorium,539,145,building
+N,abdul,Abdul Kalam Block (AK - Food Tech & Chemical),469,138,building
+N,amph,Amphi Theatre,584,258,landmark
+N,lab1,Lab I,293,246,lab
+N,lab2,Lab II,328,240,lab
+N,lab3,Lab III,329,364,lab
+N,lab4,Lab IV,295,363,lab
+N,lab5,Lab V,231,385,lab
+N,lab6,Lab VI,215,272,lab
+N,lab7,Lab VII,222,218,lab
+N,lab8,Lab VIII,254,218,lab
+N,lab9,Lab IX,263,163,lab
+N,canteen,Connector,545,599,connector
+N,playground,Play Ground,507,687,landmark
+N,volley,Volleyball Court,633,712,landmark
+N,basket,Basketball Court,651,679,landmark
+N,ladies,Ladies Hostel,988,381,hostel
+N,intl,International Ladies Hostel,927,291,hostel
+N,carpark,Car Parking,688,649,parking
+N,park30,Parking Area,689,498,parking
+N,twowheeler,Two Wheeler Parking,472,484,parking
+N,herbal,Herbal Garden,232,402,landmark
+N,wwtp,Waste Water Treatment Plant,1022,410,utility
+N,gen1,Generator Room I,191,288,utility
+N,gen2,Generator Room II,901,366,utility
+N,power,Power Room,199,335,utility
+N,work,Work Shop Gate,275,397,gate
+N,store,Project Store Gate,387,424,gate
+N,jm,Main Road Junction,559,542,junction
+N,jc,Central Lawn Junction,586,420,junction
+N,jL1,West Road Junction 1,505,400,junction
+N,jL2,West Road Junction 2,469,307,junction
+N,jR1,East Road Junction 1,668,400,junction
+N,jR2,East Road Junction 2,703,307,junction
+N,jNW,Connector,420,190,connector
+N,jE,East Road Junction,795,282,junction
+N,jRd,Main Road East Junction,630,531,junction
+N,jH1,Hostel Road Junction 1,800,430,junction
+N,jH2,Hostel Road Junction 2,880,380,junction
+N,jp1,Connector,420,440,connector
+N,jw,Workshop Junction,275,410,junction
+N,jLab,Lab Crossing,322,303,junction
+N,jLabW,Lab West Junction,250,300,junction
+N,maingate1,Main Gate 1,554,484,gate
+N,maingate2,Main Gate 2,610,485,gate
+N,t1,Connector,631,461,connector
+N,j2,Connector,767,467,connector
+N,j3,Connector,687,461,connector
+N,canteenbelow,Canteen(Below),456,158,canteen
+N,n,Connector,694,199,connector
+N,n2,Connector,668,255,connector
+N,n3,Connector,587,224,connector
+N,n4,Connector,583,177,connector
+N,n5,Connector,508,181,connector
+N,n6,Connector,535,177,connector
+N,n7,Connector,414,299,connector
+N,store2,Store,434,345,building
+N,n8,Connector,414,344,connector
+N,n9,Connector,583,296,connector
+N,n10,Connector,472,352,connector
+N,n11,Connector,506,255,connector
+N,n12,Connector,491,247,connector
+N,junction,Connector,747,229,connector
+N,n13,Connector,462,288,connector
+N,n14,Connector,473,210,connector
+N,kiosk37,Kiosk on CLC,684,218,landmark
+N,kiosk38,Kiosk near Mini Auditorium,516,156,landmark
+N,connector,Connector,486,342,connector
+N,connector2,Connector,686,340,connector
+E,jm,twowheeler
+E,jm,jRd
+E,twowheeler,jp1
+E,jp1,store
+E,jp1,jw
+E,jp1,south
+E,jw,work
+E,jw,herbal
+E,jw,lab5
+E,jw,lab4
+E,jw,jLab
+E,jLab,lab1
+E,jLab,lab2
+E,jLab,lab3
+E,jLab,lab4
+E,jLab,jLabW
+E,jLabW,lab6
+E,jLabW,power
+E,lab6,lab7
+E,lab6,gen1
+E,lab7,lab8
+E,lab8,lab9
+E,jNW,lab9
+E,jL1,admin
+E,jL2,amph
+E,jL2,admin
+E,south,church
+E,south,vipro
+E,jR1,north
+E,jR1,jR2
+E,jR1,admin
+E,jR2,ram
+E,jR2,amph
+E,jR2,admin
+E,jR2,jE
+E,jE,intl
+E,clc,ram
+E,amenity,miniaud
+E,abdul,jNW
+E,visv,jNW
+E,jH1,jH2
+E,jH2,ladies
+E,jH2,gen2
+E,jH2,intl
+E,ladies,wwtp
+E,jRd,canteen
+E,jRd,carpark
+E,carpark,basket
+E,basket,volley
+E,canteen,playground
+E,miniaud,abdul
+E,maingate1,jL1
+E,jc,jR1
+E,jc,jL1
+E,maingate2,t1
+E,t1,jR1
+E,t1,j3
+E,j3,j2
+E,j2,jH1
+E,jRd,park30
+E,jm,maingate1
+E,jm,maingate2
+E,n3,amph
+E,n3,clc
+E,n3,n2
+E,n2,n
+E,n,n4
+E,clc,amenity
+E,n6,miniaud
+E,n6,n4
+E,n6,n5
+E,jLab,n7
+E,n7,jNW
+E,n7,n8
+E,n8,store2
+E,jL2,n7
+E,admin,n9
+E,n9,amph
+E,n9,jL2
+E,n9,jR2
+E,jL2,n10
+E,n10,jL1
+E,n10,south
+E,maingate1,church
+E,maingate1,south
+E,jL2,vipro
+E,n5,jNW
+E,canteenbelow,abdul
+E,abdul,n5
+E,n11,jL2
+E,n11,n3
+E,n2,jR2
+E,n,junction
+E,junction,jE
+E,n12,n13
+E,n13,visv
+E,n13,jL2
+E,n12,n14
+E,n14,n5
+E,kiosk37,n
+E,kiosk38,n6
+E,kiosk38,n5
+E,ram,junction
+E,jL1,church
+E,north,j3
+E,n10,connector
+E,connector,admin
+E,admin,connector2
+E,connector2,north
